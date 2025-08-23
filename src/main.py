@@ -68,7 +68,7 @@ def _int_ranges_to_int_list(int_ranges):
         if (type(ir) == int):
             numbers = [ir] 
         elif (type(ir) == tuple):
-            numbers = list(range(ir[0], ir[1]))
+            numbers = list(range(ir[0], ir[1] + 1))
 
         int_list.extend(numbers)
     return int_list
